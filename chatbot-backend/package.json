@@ -1,0 +1,19 @@
+{
+  "name": "chatbot-backend",
+  "version": "1.0.0",
+  "description": "A back-end server for kalimat.ai chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "chatbot"
+  ],
+  "author": "Akmal Fadlurohman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "readline": "^1.3.0",
+    "socket.io": "^2.1.0"
+  }
+}

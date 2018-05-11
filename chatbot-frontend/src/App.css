@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  display: inline-block;
+}
+
+.App {
+  background-color: #1c90fc;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatroom {
+  width: 360px;
+  height: 600px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3);
+}
+
+.chatroom h3 {
+  font-family: 'Pacifico', cursive;
+  background-color: #EEFF41;
+  color: #AED6F1;
+  margin: 0;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatroom .chats {
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 10px 0 0;
+  height: 510px;
+  overflow-y: scroll;
+}
+
+.chatroom .chats .chat {
+  position: relative;
+  padding: 5px 13px;
+  font-size: 14px;
+  border-radius: 10px;
+  list-style: none;
+  margin: 10px 0;
+  max-width: 200px;
+}
+
+.chatroom .chats .chat.left {
+  background: #00B0FF;
+  float: left;
+  clear: both;
+}
+
+.chatroom .chats .chat.right {
+  background: #D6EAF8;
+  float: right;
+  clear: both;
+}
+
+.chatroom .input {
+  height: 40px;
+  width: 100%;
+  background: #EEFF41;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chatroom .input input[type="text"] {
+  background: #FFFFFF;
+  outline: 0;
+  border: 2px solid #1EE494;
+  padding: 0 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 10px;
+  height: 30px;
+  width: 270px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.chatroom .input input[type="submit"] {
+  background: transparent;
+  color: #AED6F1;
+  border: 1px solid #1EE494;
+  height: 30px;
+  width: 70px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chatroom .input input[type="submit"]:hover {
+  background: #00B0FF;
+  color: #FFFFFF;
+}
+
+.button {
+  background-color: #F44336;
+  border: 1px solid #1EE494;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: white;
+  padding: 5px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #EEFF41;
+  color: #AED6F1;
+}
